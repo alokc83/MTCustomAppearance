@@ -72,7 +72,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="This is Nav Bar" id="bZh-x9-JR6"/>
+                    <navigationItem key="navigationItem" title="This is Nav Bar" id="bZh-x9-JR6">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="wS2-eM-YsH"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV3-f6-izB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

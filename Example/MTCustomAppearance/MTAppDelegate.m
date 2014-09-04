@@ -20,9 +20,18 @@
     
     [customUI customizeNavBarWithDefaultBarImageName:@"tab_bg.png" withInsets:UIEdgeInsetsMake(0, 0, 0, 0) andLandscapeBarImageName:@"tab_bg.png" withInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     
-    [customUI customizeNavBarTitleTextColor:[UIColor greenColor] titleTextShadowColor:[UIColor blackColor] titleShadowOffsetSize:CGSizeMake(0, 1) titleTextFontName:@"Impact" titleTextFontSize:16];
+    [customUI customizeNavBarTitleTextColor:[UIColor greenColor] titleTextShadowColor:[UIColor blackColor] titleShadowOffsetSize:CGSizeMake(0, 1) titleTextFontName:@"AmericanTypewriter" titleTextFontSize:16];
 
+    [customUI customizeUIBarButtonWithBGImageName:@"button_textured_30" withInsets:UIEdgeInsetsMake(0, 5, 0, 5) forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [customUI customizeUIBarButtonTitleTextColor:[UIColor redColor] titleTextShadowColor:[UIColor whiteColor] titleTextShadowOffsetSize:CGSizeMake(0, 1) titleTextFontName:@"AmericanTypewriter" titleTextFontSize:14];
+        [customUI customizeUIBarButtonTitleTextColor:[UIColor blackColor] titleTextShadowColor:[UIColor redColor] titleTextShadowOffsetSize:CGSizeMake(0, 1) titleTextFontName:@"AmericanTypewriter" titleTextFontSize:14 forState:UIControlStateHighlighted];
+    [customUI customizeUIBarBackButtonWithBGImageNameDefault:@"button_back_textured_30" withInsets:UIEdgeInsetsMake(0, 13, 0, 5) forState:UIControlStateNormal];
 
+   // [customUI customizeUISliderWithMinimumTrackImageName:@"slider_minimum.png" withInsets:UIEdgeInsetsMake(0, 5, 0, 0) andSliderMaximumTrackImageName:@"slider_maximum.png" withInsets:UIEdgeInsetsMake(0, 5, 0, 0) andThumbImageName:@"thumb.png"];
+    [customUI customizeUISliderWithMinimumTrackImageName:@"slider_minimum.png" withInsets:UIEdgeInsetsMake(0, 5, 0, 0) andSliderMaximumTrackImageName:@"slider_maximum.png" withInsets:UIEdgeInsetsMake(0, 0, 0, 5) andThumbImageName:@"thumb.png"];
+    
+    [customUI customizeUISegmentedControlWithSegmentSelectedImageName:@"segcontrol_sel.png" andInsetsForSelected:UIEdgeInsetsMake(0, 15, 0, 15) withSegmentUnselectedImageName:@"segcontrol_uns.png" andInsetsForUnselected:UIEdgeInsetsMake(0, 15, 0, 15) withSegmentSelectedUnselectedImageName:@"segcontrol_sel-uns.png" andInsetsForSelectedUnselected:UIEdgeInsetsZero withSegmentUnselectedSelectedImageName:@"segcontrol_uns-sel.png" andInsetsForUnselectedSelected:UIEdgeInsetsZero withSegmentUnselectedUnselectedImageName:@"segcontrol_uns-uns.png" andInsetsForUnselectedUnselected:UIEdgeInsetsZero forBarMetrices:UIBarMetricsDefault];
+    
     return YES;
 }
 							
