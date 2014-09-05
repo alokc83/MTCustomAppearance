@@ -10,6 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 7.0 and ARC
 
 ## Installation
 
@@ -20,7 +21,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Alok Choudhary, alok@mappletech.com
+Alok Choudhary, alok.c83@gmail.com
 
 ## License
 

@@ -11,11 +11,8 @@ Pod::Spec.new do |s|
   s.name             = "MTCustomAppearance"
   s.version          = "0.1.0"
   s.summary          = "Customize the appearance of your app."
-  s.description      = <<-DESC
-                       Customize the appearance of your app
+  s.description      = "Methods that help developer tp customize look and feel of apps"
 
-                       * UIControl
-                       DESC
   s.homepage         = "https://github.com/alokc83/MTCustomAppearance"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
