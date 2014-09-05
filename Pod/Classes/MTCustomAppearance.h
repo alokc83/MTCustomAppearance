@@ -6,6 +6,18 @@
 //  Copyright (c) 2014 Mapple Technologies LLC. All rights reserved.
 //
 
+/** MTCustomAppearance is useful for quick Userinterface customization.Follwing UIControls added for customization.
+ *UISwitch
+ *UIStepper
+ *UIProgressView
+ *UISlider
+ *Nav Bar - UIBar Button, Back Button
+ *Tab Bar 
+ *UISegmentedControl
+ *UIPageControl
+ */
+
+
 #import <UIKit/UIKit.h>
 
 @interface MTCustomAppearance : NSObject
