@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MTCustomAppearance"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Customize the appearance of your app."
   s.description      = <<-DESC
 Customize the appearance of your app. Adding more UIControls soon. Available controls. 
