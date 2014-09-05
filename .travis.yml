@@ -1,5 +1,6 @@
 language: objective-c
+install:
+	- pod install
 xcode_workspace: Example/MTCustomAppearance.xcworkspace
 xcode_scheme: MTCustomAppearance
 xcode_sdk: iphonesimulator7.0
-pod install
