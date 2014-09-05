@@ -106,4 +106,44 @@
                               andInsetsForUnselectedUnselected:(UIEdgeInsets)insetsForUnselectedUnselected
                                                 forBarMetrices:(UIBarMetrics)barMetrices;
 
+
+
+#pragma mark -
+#pragma mark Custom UISwitch
+
+-(void)customizeUISwitchWithOnTintColor:(UIColor *)onTintColor offTintColor:(UIColor *)offTintColor
+                      andThumbTintColor:(UIColor *)thumbTintColor
+                        withOnImageName:(NSString *)onImageName
+                        andOffImageName:(NSString *)offImageName;
+
+-(void)customizeUISwitchWithOnTintColor:(UIColor *)onTintColor offTintColor:(UIColor *)offTintColor
+                      andThumbTintColor:(UIColor *)thumbTintColor;
+
+#pragma mark -
+#pragma mark Custom UIStepper
+-(void)customizeUIStepperWithTintColor:(UIColor *)tintColor
+                    incrementImageName:(NSString *)incrementImageName
+                    decrementImageName:(NSString *)decrementImageName;
+
+-(void)customizeUIStepperWithTintColor:(UIColor *)tintColor;
+
+
+#pragma mark -
+#pragma mark Custom UIProgressView
+
+-(void)customizeUIProgressViewWithProgressTintColor:(UIColor *)progressTintColor
+                                  andTrackTintColor:(UIColor *)trackTintColor;
+
+-(void)customizeUIProgressViewWithProgressImageName:(NSString *)progressImageName
+                                  insetsForProgress:(UIEdgeInsets)insetsForProgress
+                                  andTrackImageName:(NSString *)trackImageName
+                                     insetsForTrack:(UIEdgeInsets)insetsForTrack;
+
+#pragma mark -
+#pragma mark Custom UIPageControl
+
+-(void)customizeUIPageControlWithCurrentPageIndicatorTint:(UIColor *)currentPageIndictorTint
+                                     andPageIndicatorTint:(UIColor *)pageIndicatorTint;
+
+
 @end

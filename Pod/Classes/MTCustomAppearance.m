@@ -245,4 +245,119 @@
     
 }
 
+
+#pragma mark -
+#pragma mark Custom UISwitch
+
+-(void)customizeUISwitchWithOnTintColor:(UIColor *)onTintColor offTintColor:(UIColor *)offTintColor
+                      andThumbTintColor:(UIColor *)thumbTintColor
+                        withOnImageName:(NSString *)onImageName
+                        andOffImageName:(NSString *)offImageName
+{
+    BOOL areImagesAvailable = YES;
+    if ([onImageName isEqualToString:@""] && [offImageName isEqualToString:@""]) {
+        areImagesAvailable = NO;
+    }
+
+    if (areImagesAvailable == YES)
+    {
+        UIImage *onImage = [UIImage imageNamed:onImageName];
+        UIImage *offImage = [UIImage imageNamed:offImageName];
+        
+        [[UISwitch appearance] setOnImage:onImage];
+        [[UISwitch appearance] setOffImage:offImage];
+    }
+
+    
+    [[UISwitch appearance] setOnTintColor:onTintColor];
+    [[UISwitch appearance] setTintColor:offTintColor];
+    [[UISwitch appearance] setThumbTintColor:thumbTintColor];
+    
+
+
+    
+}
+
+-(void)customizeUISwitchWithOnTintColor:(UIColor *)onTintColor
+                           offTintColor:(UIColor *)offTintColor
+                      andThumbTintColor:(UIColor *)thumbTintColor
+{
+    [self customizeUISwitchWithOnTintColor:onTintColor offTintColor:offTintColor andThumbTintColor:thumbTintColor withOnImageName:@"" andOffImageName:@""];
+}
+
+
+#pragma mark  -
+#pragma mark Custom UIStepper
+
+-(void)customizeUIStepperWithTintColor:(UIColor *)tintColor
+                    incrementImageName:(NSString *)incrementImageName
+                    decrementImageName:(NSString *)decrementImageName
+
+{
+    BOOL areImagesAvailable = YES;
+    if ([incrementImageName isEqualToString:@""] && [decrementImageName isEqualToString:@""])
+    {
+        areImagesAvailable = NO;
+    }
+    
+    if (areImagesAvailable == YES)
+    {
+        UIImage *incrementImage = [UIImage imageNamed:incrementImageName];
+        UIImage *decrementImage = [UIImage imageNamed:decrementImageName];
+        
+        [[UIStepper appearance] setIncrementImage:incrementImage forState:UIControlStateNormal];
+        [[UIStepper appearance] setDecrementImage:decrementImage forState:UIControlStateNormal];
+    }
+
+    
+    [[UIStepper appearance] setTintColor:tintColor];
+
+    
+}
+
+
+-(void)customizeUIStepperWithTintColor:(UIColor *)tintColor
+{
+    [self customizeUIStepperWithTintColor:tintColor incrementImageName:@"" decrementImageName:@""];
+}
+
+
+#pragma mark -
+#pragma mark Custom UIProgressView
+
+-(void)customizeUIProgressViewWithProgressTintColor:(UIColor *)progressTintColor
+                                  andTrackTintColor:(UIColor *)trackTintColor
+{
+    [[UIProgressView appearance] setProgressTintColor:progressTintColor];
+    [[UIProgressView appearance] setTrackTintColor:trackTintColor];
+    
+}
+
+-(void)customizeUIProgressViewWithProgressImageName:(NSString *)progressImageName
+                                  insetsForProgress:(UIEdgeInsets)insetsForProgress
+                                  andTrackImageName:(NSString *)trackImageName
+                                     insetsForTrack:(UIEdgeInsets)insetsForTrack
+
+{
+    UIImage *progressImage = [[UIImage imageNamed:progressImageName] resizableImageWithCapInsets:insetsForProgress];
+    UIImage *trackImage = [[UIImage imageNamed:trackImageName] resizableImageWithCapInsets:insetsForTrack];
+    
+    [[UIProgressView appearance] setProgressImage: progressImage];
+    [[UIProgressView appearance] setTrackImage:trackImage];
+    
+}
+
+
+#pragma mark -
+#pragma mark Custom UIPageControl
+
+-(void)customizeUIPageControlWithCurrentPageIndicatorTint:(UIColor *)currentPageIndictorTint
+                                     andPageIndicatorTint:(UIColor *)pageIndicatorTint
+
+{
+    [[UIPageControl appearance] setCurrentPageIndicatorTintColor:currentPageIndictorTint];
+    [[UIPageControl appearance] setPageIndicatorTintColor:pageIndicatorTint];
+    
+}
+
 @end
