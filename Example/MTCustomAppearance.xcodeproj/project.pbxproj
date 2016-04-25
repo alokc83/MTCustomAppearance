@@ -81,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		061ABB58445E4BD797FEC223 /* MTCustomAppearance.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTCustomAppearance.podspec; path = ../MTCustomAppearance.podspec; sourceTree = "<group>"; };
+		0C1A2C5EA9A1B8775AFA155A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MTCustomAppearance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCustomAppearance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,7 +105,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		8AC0B22927144B63A8F3AE8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98920A9E3F854F009A212FC4 /* libPods-MTCustomAppearance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTCustomAppearance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D734A7126ED4437880438FCD /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		C7E6F4DCDDBB8BFD9783767A /* Pods-MTCustomAppearance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCustomAppearance.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTCustomAppearance/Pods-MTCustomAppearance.release.xcconfig"; sourceTree = "<group>"; };
 		D76EC2E419B704F40011419E /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
 		D76EC2E519B704F40011419E /* bg_sand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_sand.png; sourceTree = "<group>"; };
 		D76EC2E619B704F40011419E /* button_back_textured_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_back_textured_24.png; sourceTree = "<group>"; };
@@ -149,8 +150,9 @@
 		D76EC30D19B704F40011419E /* yesSwitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesSwitch.png; sourceTree = "<group>"; };
 		D76EC30E19B704F40011419E /* yesSwitch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yesSwitch@2x.png"; sourceTree = "<group>"; };
 		E03DFA4A10D94C0B851F889F /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6B32E51BCE447AA87CD94CD /* Pods-MTCustomAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCustomAppearance.xcconfig"; path = "Pods/Pods-MTCustomAppearance.xcconfig"; sourceTree = "<group>"; };
+		E497280FD821B8AAACA0F7E4 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4F841FA86FF4B6D8E327DFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F7CF8D4A9BA3A1CB23577322 /* Pods-MTCustomAppearance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCustomAppearance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTCustomAppearance/Pods-MTCustomAppearance.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +189,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				E6B32E51BCE447AA87CD94CD /* Pods-MTCustomAppearance.xcconfig */,
-				D734A7126ED4437880438FCD /* Pods-Tests.xcconfig */,
+				9693AE372338DADDEDB6E4B1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +271,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		9693AE372338DADDEDB6E4B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7CF8D4A9BA3A1CB23577322 /* Pods-MTCustomAppearance.debug.xcconfig */,
+				C7E6F4DCDDBB8BFD9783767A /* Pods-MTCustomAppearance.release.xcconfig */,
+				E497280FD821B8AAACA0F7E4 /* Pods-Tests.debug.xcconfig */,
+				0C1A2C5EA9A1B8775AFA155A /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D76EC2E219B704E10011419E /* Themes */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +353,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				6CC2D8C62B2E4B299286C6B6 /* Copy Pods Resources */,
+				BA29EEC9898515E9566601CC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,6 +373,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				797407AD72584A5C955A7F65 /* Copy Pods Resources */,
+				BBEFA2B27AEEB462541CCA8F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,7 +512,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-MTCustomAppearance-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTCustomAppearance/Pods-MTCustomAppearance-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72091BF59B854890BAC00D3F /* Check Pods Manifest.lock */ = {
@@ -528,7 +542,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA29EEC9898515E9566601CC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTCustomAppearance/Pods-MTCustomAppearance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBEFA2B27AEEB462541CCA8F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -672,7 +716,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B32E51BCE447AA87CD94CD /* Pods-MTCustomAppearance.xcconfig */;
+			baseConfigurationReference = F7CF8D4A9BA3A1CB23577322 /* Pods-MTCustomAppearance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -686,7 +730,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B32E51BCE447AA87CD94CD /* Pods-MTCustomAppearance.xcconfig */;
+			baseConfigurationReference = C7E6F4DCDDBB8BFD9783767A /* Pods-MTCustomAppearance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -700,7 +744,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D734A7126ED4437880438FCD /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = E497280FD821B8AAACA0F7E4 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTCustomAppearance.app/MTCustomAppearance";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -723,7 +767,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D734A7126ED4437880438FCD /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = 0C1A2C5EA9A1B8775AFA155A /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTCustomAppearance.app/MTCustomAppearance";
 				FRAMEWORK_SEARCH_PATHS = (
