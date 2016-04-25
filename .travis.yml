@@ -9,5 +9,5 @@ language: objective-c
 osx_image: xcode7.3
 
 script:
-  - xctool -project Example/MTCustomAppearance.xcworkspace -scheme MTCustomAppearance -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
+  - xctool -workspace Example/MTCustomAppearance.xcworkspace -scheme MTCustomAppearance -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
 #  - xctool -project Example/MTCustomAppearance.xcworkspace -scheme MTCustomAppearance -sdk iphonesimulator9.0 ONLY_ACTIVE_ARCH=NO
